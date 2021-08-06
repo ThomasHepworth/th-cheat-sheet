@@ -1,9 +1,9 @@
 ## Working in the shell
 
-`Ctrl+L` - clean cmd
-`Ctrl+Z` - kill/exit previous command
-`cd ..` - Go up a level
-`cd <path>` - set directory to given path
+* `Ctrl+L` ~ clean cmd
+* `Ctrl+Z` ~ kill/exit previous command
+* `cd ..` ~ Go up a level
+* `cd <path>` ~ set directory to given path
 
 <br>
 <hr>
