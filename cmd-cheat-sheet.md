@@ -25,7 +25,12 @@ https://www.proofhub.com/articles/effective-communication
 
 Working example of the above:
 
-To get everything setup, initially ensure you cd into your home directory. From there, follow the instructions below:
+To get everything setup, initially ensure you cd into your home directory. You can do this by using `cd ..`. If you go too far up the folder branches, you can path back down using `cd my_folder_i_want_to_access`.
+
+If done correctly, your cmd session should end up looking like this:
+![Screenshot 2021-08-09 at 14 49 34](https://user-images.githubusercontent.com/45356472/128717070-4cba4063-1e12-488e-aaf0-bde7629220e9.png)
+
+From there, follow the instructions below:
 ```
 git clone --mirror git@github.com:moj-analytical-services/criminal-scenario-tool.git
 cd criminal-scenario-tool.git
