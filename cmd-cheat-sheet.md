@@ -49,6 +49,18 @@ git push secondary --all
 
 Please note, any changes to your secondary repo will lead to errors when attempting to run the above lines.
 
+#### Resetting to a previous commit
+More here - https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+
+**Start by resetting to your previous commit**
+`git reset --hard <commitId> && git clean -f
+**Then update the github version**
+```
+git push origin/master --force
+# or
+# git push --force
+```
+
 <br>
 <hr>
 
