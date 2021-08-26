@@ -37,7 +37,6 @@ cd criminal-scenario-tool.git
 git remote add --mirror=fetch secondary git@github.com:moj-analytical-services/criminal-scenario-tool-testing.git
 git fetch origin
 git push secondary --all
-git@github.com:moj-analytical-services/criminal-scenario-tool-testing.git
 ```
 Once done, ensure your directory stays within `criminal-scenario-tool-testing.git` (or equivalent).
 
