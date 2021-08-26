@@ -30,14 +30,13 @@ To get everything setup, initially ensure you cd into your home directory. You c
 If done correctly, your cmd session should end up looking like this: <br>
 ![Screenshot 2021-08-09 at 14 49 34](https://user-images.githubusercontent.com/45356472/128717070-4cba4063-1e12-488e-aaf0-bde7629220e9.png)
 
-From there, follow the instructions below:
+From there, enter the following code into terminal, line by line:
 ```
 git clone --mirror git@github.com:moj-analytical-services/criminal-scenario-tool.git
 cd criminal-scenario-tool.git
 git remote add --mirror=fetch secondary git@github.com:moj-analytical-services/criminal-scenario-tool-testing.git
 git fetch origin
 git push secondary --all
-git@github.com:moj-analytical-services/criminal-scenario-tool-testing.git
 ```
 Once done, ensure your directory stays within `criminal-scenario-tool-testing.git` (or equivalent).
 
