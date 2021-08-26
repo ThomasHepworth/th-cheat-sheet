@@ -21,7 +21,7 @@ Or in a working example:
 git checkout
 
 #### Syncing up repos (specifically to allow creation of a test repo for an app)
-https://www.proofhub.com/articles/effective-communication
+https://www.opentechguides.com/how-to/article/git/177/git-sync-repos.html
 
 Working example of the above:
 
