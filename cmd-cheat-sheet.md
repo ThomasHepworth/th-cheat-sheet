@@ -15,11 +15,11 @@
 
 Or in a working example:
 `git clone -b write_df_to_s3_fix git@github.com:moj-analytical-services/s3tools.git alt-ringfence`
-
+<br>
 #### Branches
 `git push origin --delete {the_remote_branch} # Delete branch locally + remotely`
 git checkout
-
+<br>
 #### Syncing up repos (specifically to allow creation of a test repo for an app)
 https://www.opentechguides.com/how-to/article/git/177/git-sync-repos.html
 
@@ -47,7 +47,7 @@ git push secondary --all
 ```
 
 Please note, any changes to your secondary repo will lead to errors when attempting to run the above lines.
-
+<br>
 #### Resetting to a previous commit
 More here - https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
 
