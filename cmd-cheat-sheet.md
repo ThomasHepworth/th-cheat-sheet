@@ -105,5 +105,5 @@ APScheduler==3.7.0
 itemloaders==1.0.4
 w3lib==1.22.0
 ```
-
+You can get your current package list through `pip freeze`
 Then run `pip install -r requirements.txt` from the terminal
