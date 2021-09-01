@@ -4,6 +4,10 @@
 * `Ctrl+Z` ~ kill/exit previous command
 * `cd ..` ~ Go up a level
 * `cd <path>` ~ set directory to given path
+* `pwd` ~ path to directory
+* `mkdir <new_dir>` ~ create a new dir
+* `which python3` ~ python location
+* `python3` ~ python version info
 
 <br>
 <hr>
@@ -96,7 +100,40 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 `python3 <script>` - run python script
 
 ##### Package Mangement
-**Update with notes on virtual envs at a later date**
+
+#### Working with pip
+
+**check to see if you have the latest version of pip**
+`pip3 list`
+
+**upgrade pip**
+`pip3 install --upgrade pip —user`
+
+**delete all packages**
+`pip3 freeze | xargs pip3 uninstall -y`
+
+**uninstall**
+`pip install -U spacy`
+
+<br>
+<br>
+
+#### Virtual Environments
+
+Venv online guide - https://docs.python.org/3/tutorial/venv.html
+
+#### Personal Notes
+Create an environment by cd'ing to your desired location and then using:
+`python3 -m virtualenv venv`
+
+# activation of venv
+source venv/bin/activate
+
+# To activate your new env (at least inside VS)!
+Ctrl+Shift+P > Python Interpreter > Select your venv # still not working for me…
+
+# to deactivate
+deactivate
 
 One solution is to create a requirements.txt file. For example:
 ```
