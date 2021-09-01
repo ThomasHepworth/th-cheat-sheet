@@ -116,7 +116,6 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 `pip install -U spacy`
 
 <br>
-<br>
 
 #### Virtual Environments
 
@@ -126,13 +125,13 @@ Venv online guide - https://docs.python.org/3/tutorial/venv.html
 Create an environment by cd'ing to your desired location and then using:
 `python3 -m virtualenv venv`
 
-# activation of venv
+**activation of venv**
 source venv/bin/activate
 
-# To activate your new env (at least inside VS)!
+**To activate your new env (at least inside VS)!**
 Ctrl+Shift+P > Python Interpreter > Select your venv # still not working for me…
 
-# to deactivate
+**to deactivate**
 deactivate
 
 One solution is to create a requirements.txt file. For example:
