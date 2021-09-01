@@ -101,7 +101,7 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 
 ##### Package Mangement
 
-#### Working with pip
+### Working with pip
 
 **check to see if you have the latest version of pip**
 `pip3 list`
@@ -117,7 +117,7 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 
 <br>
 
-#### Virtual Environments
+### Virtual Environments
 
 Venv online guide - https://docs.python.org/3/tutorial/venv.html
 
