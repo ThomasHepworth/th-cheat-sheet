@@ -1,9 +1,35 @@
 # Functions to replace soon to be deprecated s3tools functions
 
-Old s3tools functions:
+Old s3tool function replacements:
   - [read_using](#read_using)
   - [s3_path_to_full_df](#s3_path_to_full_df)
   - [list_files_in_buckets](#list_files_in_buckets)
+
+<hr>
+
+## Alternatives methods for reading and writing available in botor
+
+### read file examples
+```
+botor::s3_read('s3://alpha-hmpps-covid-data-processing/HMPPS-deaths.csv', read.csv)
+botor::s3_read('s3://alpha-hmpps-covid-data-processing/HMPPS-deaths.csv', data.table::fread)
+botor::s3_read('s3://botor/example-data/mtcars.json', jsonlite::fromJSON)
+botor::s3_read('s3://botor/example-data/mtcars.jsonl', jsonlite::stream_in)
+```
+
+### write file examples
+```
+botor::s3_write(mtcars, write.csv, 's3://botor/example-data/mtcars.csv', row.names = FALSE) # edit s3 filepath
+
+# for .xlsx, it's a little bit more longwinded:
+t <- tempfile(fileext = '.xlsx')
+# create blank df and save to temp folder
+wb <- openxlsx::createWorkbook()
+openxlsx::addWorksheet(wb, sheetName = 'testing')
+openxlsx::writeData(wb, sheet = 'testing', x = mtcars)
+openxlsx::saveWorkbook(wb, file = t)
+botor::s3_upload_file(file = t, uri = "s3://alpha-hmpps-covid-data-processing/testing.xlsx") # edit s3 filepath
+```
 
 ## read_using
 ```
@@ -40,6 +66,8 @@ read_using(
 
 read_using(FUN=readxl::read_excel, s3_path="alpha-test-team/mpg.xlsx")
 ```
+
+<hr>
 
 ## s3_path_to_full_df
 ```
@@ -92,6 +120,8 @@ s3_path_to_full_df('s3://alpha-hmpps-covid-data-processing/HMPPS-deaths.csv')
 s3tools::s3_path_to_full_df("alpha-hmpps-covid-data-processing/covid19infectionsurveydatasets20210521.xlsx", sheet = 2)
 s3_path_to_full_df("alpha-hmpps-covid-data-processing/capacity-reports/COVID-19CapacityImpact-20200427.xlsm", sheet = 1)
 ```
+
+<hr>
 
 ## list_files_in_buckets
 ```
