@@ -30,6 +30,7 @@ openxlsx::writeData(wb, sheet = 'testing', x = mtcars)
 openxlsx::saveWorkbook(wb, file = t)
 botor::s3_upload_file(file = t, uri = "s3://alpha-hmpps-covid-data-processing/testing.xlsx") # edit s3 filepath
 ```
+<hr>
 
 ## read_using
 ```
