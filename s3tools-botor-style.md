@@ -7,7 +7,7 @@ Old s3tool function replacements - these should act as 1:1 replacements for the 
 
 <hr>
 
-## Alternatives methods for reading and writing available in botor
+## Alternatives methods for reading, writing and viewing files/buckets available in botor
 
 ### read file examples
 ```
@@ -30,6 +30,16 @@ openxlsx::writeData(wb, sheet = 'testing', x = mtcars)
 openxlsx::saveWorkbook(wb, file = t)
 botor::s3_upload_file(file = t, uri = "s3://alpha-hmpps-covid-data-processing/testing.xlsx") # edit s3 filepath
 ```
+
+### viewing files/buckets
+```
+# view files along filepath
+boto3::s3_ls("alpha-hmpps-covid-data-processing")
+boto3::s3_ls("alpha-hmpps-covid-data-processing/deaths")
+# view all buckets owned by asd
+boto3::s3_list_buckets(simplify = TRUE)
+```
+
 <hr>
 
 ## read_using
