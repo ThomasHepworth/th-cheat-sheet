@@ -1,6 +1,6 @@
 # Functions to replace soon to be deprecated s3tools functions
 
-Old s3tool function replacements:
+Old s3tool function replacements - these should act as 1:1 replacements for the old s3tools functions:
   - [read_using](#read_using)
   - [s3_path_to_full_df](#s3_path_to_full_df)
   - [list_files_in_buckets](#list_files_in_buckets)
