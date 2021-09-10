@@ -1,9 +1,16 @@
 # Functions to replace soon to be deprecated s3tools functions
 
+_Note:_ To turn off the debugging warnings found within the `botor` library, please use the following:
+```
+library(logger)
+log_threshold(WARN, namespace = 'botor')
+```
+
 Old s3tool function replacements - these should act as 1:1 replacements for the old s3tools functions:
   - [read_using](#read_using)
   - [s3_path_to_full_df](#s3_path_to_full_df)
   - [list_files_in_buckets](#list_files_in_buckets)
+  - [write_df_to_csv_in_s3](#write_df_to_csv_in_s3)
 
 <hr>
 
@@ -180,3 +187,30 @@ list_files_in_buckets(bucket_filter = "alpha-hmpps-covid-data-processing", prefi
 list_files_in_buckets(bucket_filter = "alpha-hmpps-covid-data-processing/deaths", prefix = 'fatalities') # or just type in the full string you watch to match...
 ```
 
+<hr>
+
+## write_df_to_csv_in_s3
+
+```
+write_df_to_csv_in_s3 <- function(df, s3_path, ...) { # overwrite needs to be reimplemented
+  # add errors
+  if(!any(grepl('data.frame', df %>% class()))) stop("df entered isn't a valid dataframe object")
+  if(tools::file_ext(s3_path) != 'csv') stop("s3_path entered is either not a csv or is missing the .csv suffix")
+  
+  # trim s3:// if included by the user - removed so we can supply both alpha-... and s3://alpha
+  s3_path <- gsub(
+    '^s3://',
+    "",
+    s3_path,
+  )
+  # write csv
+  botor::s3_write(df, fun = write.csv, uri = paste0("s3://", s3_path), compress = "none", ...)
+  
+}
+```
+
+**Examples:**
+```
+write_df_to_csv_in_s3(df = mtcars, s3_path = "alpha-hmpps-covid-data-processing/mtcars_boto.csv")
+write_df_to_csv_in_s3(df = mtcars, s3_path = "alpha-hmpps-covid-data-processing/mtcars_boto.csv", row.names = FALSE)
+```
