@@ -220,6 +220,7 @@ write_df_to_csv_in_s3(df = mtcars, s3_path = "alpha-hmpps-covid-data-processing/
 
 ## download_file_from_s3
 
+```
 download_file_from_s3 <- function(s3_path, local_path, overwrite = FALSE) {
   
   # trim s3:// if included by the user
@@ -232,6 +233,7 @@ download_file_from_s3 <- function(s3_path, local_path, overwrite = FALSE) {
   botor::s3_download_file(uri = s3_path, file = local_path, force = overwrite)
   
 }
+```
 
 **Examples:**
 ```
