@@ -1,3 +1,11 @@
+### Initialising Project
+To initialise a renv project, simply enter:
+```
+if(!"renv" %in% installed.packages()[, "Package"]) install.packages("renv") # install renv if it doesn't exist on your system
+renv::init(bare = TRUE)
+```
+into the R console and your project will be created using renv. From here, install your required package list using the instructions below.
+
 ### Installing Required Packages
 
 For this project, we're using renv to manage packages. An introduction to renv can be found [here](https://rstudio.github.io/renv/articles/renv.html). To install the packages needed for this project, simply run the following in a console window `renv::restore()`. If new packages are added by another user, `renv::restore()` will simply install your missing packages.
