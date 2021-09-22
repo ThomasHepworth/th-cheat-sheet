@@ -138,7 +138,7 @@ deactivate
 ##### Windows
 `python -m venv venv`
 
-CMD:
+CMD: <br><br>
 ![image](https://user-images.githubusercontent.com/44782232/134423260-4e992134-b8b8-47f1-8711-a53b16700a69.png)
 
 For Powershell, use:
