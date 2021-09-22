@@ -122,10 +122,11 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 Venv online guide - https://docs.python.org/3/tutorial/venv.html
 
 #### Personal Notes
+##### Macbook
 Create an environment by cd'ing to your desired location and then using:
 `python3 -m virtualenv venv`
 
-**activation of venv**
+**activation of venv** (on mac)
 source venv/bin/activate
 
 **To activate your new env (at least inside VS)!**
@@ -133,6 +134,17 @@ Ctrl+Shift+P > Python Interpreter > Select your venv # still not working for meâ
 
 **to deactivate**
 deactivate
+
+##### Windows
+`python -m venv venv`
+
+CMD:
+![image](https://user-images.githubusercontent.com/44782232/134423260-4e992134-b8b8-47f1-8711-a53b16700a69.png)
+
+For Powershell, use:
+`venv\Scripts\Activate.ps1`
+
+Install away...
 
 One solution is to create a requirements.txt file. For example:
 ```
