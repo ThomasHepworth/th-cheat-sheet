@@ -121,8 +121,43 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 
 Venv online guide - https://docs.python.org/3/tutorial/venv.html
 
-#### Personal Notes
-##### Macbook
+### Jupyter lab
+
+Initially, create a folder to store all of your data, scripts and venv in. 
+
+You can do this in RStudio using the `New folder` button (see below image), or from either R or jupyter using the terminal. If using the terminal, simply enter `mkdir <folder_name>` (remove the `<` `>`). _Please ensure you are in your home directory when using the terminal command. Your terminal should look similar to the following image - ![Screenshot 2021-09-23 at 15 50 42](https://user-images.githubusercontent.com/45356472/134530301-b4fdf289-9f51-4480-9226-aa968191ee95.png)
+_
+<br><br>
+![Screenshot 2021-09-23 at 15 48 30](https://user-images.githubusercontent.com/45356472/134529885-2cba8e85-4a13-45ab-97e8-94451847a3b8.png)
+
+From here, enter the terminal in jupyter lab (File > New Launcher > Terminal). Again, make sure you are in your home directory to begin with (in English, you shouldn't be in a folder). For safety, just enter `cd` at this stage and you should be fine.
+
+If this is your first time creating a venv, run the following two lines:
+```
+pip install ipykernel
+pip install --upgrade pip
+```
+
+Then, in the terminal, enter (the ipykernel step is only necessary the first time you create a venv, so feel free to skip that line):
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+If done correctly, your terminal should look like so (see `(venv)` on the far left):
+![Screenshot 2021-09-23 at 15 55 26](https://user-images.githubusercontent.com/45356472/134531111-7f0270bf-7857-4c35-b1fc-f7c855a46753.png)
+
+Next, install your required packages - `pip install <package>`. For example, to install pandas, type `pip install pandas`
+
+Once you have your packages installed, run the final step (replacing `<name_of_venv>`), which creates a new virtual environment to launch notebooks with:
+`python -m ipykernel install –user –name=<name_of_venv>`
+
+And that's it. If done correctly, you should now have a new virtual environment that looks like so (your name will differ):
+![Screenshot 2021-09-23 at 15 59 09](https://user-images.githubusercontent.com/45356472/134531826-fa7a2fac-3088-4b9f-bed2-16bc6b80b163.png)
+
+
+### Personal Notes
+#### Macbook
 Create an environment by cd'ing to your desired location and then using:
 `python3 -m virtualenv venv`
 
@@ -135,7 +170,7 @@ Ctrl+Shift+P > Python Interpreter > Select your venv # still not working for me�
 **to deactivate**
 deactivate
 
-##### Windows
+#### Windows
 `python -m venv venv`
 
 CMD: <br><br>
