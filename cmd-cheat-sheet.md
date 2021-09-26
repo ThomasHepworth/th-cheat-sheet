@@ -10,11 +10,12 @@
 * `python3` ~ python version info
 
 ### Git Commands
-`git remote show origin` - check which repo you are pointing at
-`git add <filename>` - add a file to your commit - https://git-scm.com/docs/git-add
-`git log --name-status` - see last commit items
-`git commit -m <commit_message>` - stage commit
-`git push` - push commit
+
+* `git remote show origin` - check which repo you are pointing at
+* `git add <filename>` - add a file to your commit - https://git-scm.com/docs/git-add
+* `git log --name-status` - see last commit items
+* `git commit -m <commit_message>` - stage commit
+* `git push` - push commit
 
 <br>
 <hr>
