@@ -158,7 +158,7 @@ If done correctly, your terminal should look like so (see `(venv)` on the far le
 Next, install your required packages - `pip install <package>`. For example, to install pandas, type `pip install pandas`
 
 Once you have your packages installed, run the final step (replacing `<name_of_venv>`), which creates a new virtual environment to launch notebooks with:
-`python -m ipykernel install –user –name=<name_of_venv>`
+`python -m ipykernel install --user -–name=<name_of_venv>`
 
 And that's it. If done correctly, you should now have a new virtual environment that looks like so (your name will differ):
 ![Screenshot 2021-09-23 at 15 59 09](https://user-images.githubusercontent.com/45356472/134531826-fa7a2fac-3088-4b9f-bed2-16bc6b80b163.png)
