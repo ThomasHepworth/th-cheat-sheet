@@ -189,6 +189,9 @@ For Powershell, use:
 
 Install away...
 
+
+### To save your package list for another to install
+
 One solution is to create a requirements.txt file. For example:
 ```
 scrapy==2.4.1
@@ -196,5 +199,5 @@ APScheduler==3.7.0
 itemloaders==1.0.4
 w3lib==1.22.0
 ```
-You can get your current package list through `pip freeze`
+You can get your current package list and save this to a file through `pip freeze > requirements.txt`
 Then run `pip install -r requirements.txt` from the terminal
