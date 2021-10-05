@@ -16,6 +16,7 @@
 * `git log --name-status` - see last commit items
 * `git commit -m <commit_message>` - stage commit
 * `git push` - push commit
+* `git checkout <filename>` - revert to upstream
 
 <br>
 <hr>
