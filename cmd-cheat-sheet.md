@@ -17,6 +17,9 @@
 * `git commit -m <commit_message>` - stage commit
 * `git push` - push commit
 * `git checkout <filename>` - revert to upstream
+* `git checkout -b my_branch_name` - create and checkout on branch
+* `git branch <branch_name>` - create a branch
+* `git push -u origin my_branch_name` - tell github that you have made a new branch - otherwise it will fail when attempting to push
 
 <br>
 <hr>
