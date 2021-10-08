@@ -16,7 +16,7 @@ To install remotely, you simply need to enter the github suffix/project location
 
 To update the package list, simply enter `renv::snapshot()`. This will open a prompt which will ask if you want to proceed (simply type **y**). Updates are added to `renv.lock`. If you wish to remove packages, simply delete them from here.
 
-_Please only add packages we need for the project._
+_Note:_ You're best only adding packages you need for your project. This reduces the total number of packages that will be installed for future users and will ensure copying the package list is quicker and more efficient.
 
 ### Installing Required Packages
 
