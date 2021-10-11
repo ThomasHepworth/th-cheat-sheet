@@ -25,3 +25,9 @@ RUN Rscript -e "install.packages(c('renv'));"
  
 COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/user-settings
 COPY .Rprofile /home/rstudio/
+
+# if you want some extra commands...
+# RUN mkdir -p /th-playground
+# WORKDIR "/th-playground"
+# # initialise renv on load
+# RUN R -e "renv::init()"
