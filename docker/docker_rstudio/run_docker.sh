@@ -33,9 +33,9 @@ if [[ ${OPTIND} -lt 5 ]]; then
    usage
 fi
 
-rstudio_image=davetang/rstudio:${ver}
+rstudio_image=tomhmoj/rstudio:${ver}
 check_image=$(docker image inspect ${rstudio_image})
-container_name=rstudio_dtang
+container_name=rstudio_tomhmoj
 
 to_mount=
 if [[ $#-4 -gt 0 ]]; then
