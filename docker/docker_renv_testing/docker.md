@@ -1,6 +1,6 @@
 # To run our docker image
 
-For a full set of notes on deploying locally, see (here)[https://user-guidance.services.alpha.mojanalytics.xyz/rshiny-app.html#deploying-locally]
+For a full set of notes on deploying locally, see [here](https://user-guidance.services.alpha.mojanalytics.xyz/rshiny-app.html#deploying-locally)
 
 For this project's files:
 1) Copy the objects inside the docker folder (these should be stored in a project locally)
