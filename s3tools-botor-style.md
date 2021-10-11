@@ -6,6 +6,13 @@ library(logger)
 log_threshold(WARN, namespace = 'botor')
 ```
 
+### Full set of conversion functions currently housed within:
+https://github.com/moj-analytical-services/s3tools-to-botor
+
+<hr>
+<br>
+<br>
+
 Old s3tool function replacements - these should act as 1:1 replacements for the old s3tools functions:
   - [read_using](#read_using)
   - [s3_path_to_full_df](#s3_path_to_full_df)
