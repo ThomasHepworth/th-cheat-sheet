@@ -1,32 +1,25 @@
 FROM rocker/rstudio:4.0.5
  
-LABEL Tom Hepworth <thomas.hepworth@justice.gov.uk>
+LABEL maintainer = "Tom Hepworth <thomas.hepworth@justice.gov.uk>"
 
-RUN apt-get clean all && \
-  apt-get update && \
-  apt-get upgrade -y && \
-  apt-get install -y \
-    libhdf5-dev \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    sudo \
+    pandoc \
+    pandoc-citeproc \
     libcurl4-gnutls-dev \
-    libssl-dev \
-    libxml2-dev \
-    libpng-dev \
+    libcairo2-dev \
     libxt-dev \
-    zlib1g-dev \
-    libbz2-dev \
-    liblzma-dev \
-    libglpk40 \
-    libgit2-28 \
-  && apt-get clean all && \
-  apt-get purge && \
-  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    libssl-dev \
+    libssh2-1-dev \
+    && rm -rf /var/lib/apt/lists/*
  
 RUN Rscript -e "install.packages(c('renv'));"
  
 COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/user-settings
-COPY .Rprofile /home/rstudio/
+# WORKDIR "/home/rstudio/working/"
+COPY .Rprofile /home/rstudio/r_projects/
 
-# if you want some extra commands...
+# some extra commands...
 # RUN mkdir -p /th-playground
 # WORKDIR "/th-playground"
 # # initialise renv on load
