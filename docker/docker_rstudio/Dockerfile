@@ -1,4 +1,5 @@
-FROM rocker/rstudio:4.0.5
+# FROM rocker/rstudio:4.0.5
+FROM rocker/rstudio:3.5.1 
  
 LABEL maintainer = "Tom Hepworth <thomas.hepworth@justice.gov.uk>"
 
