@@ -23,6 +23,13 @@
 * `git push origin --delete remoteBranchName` - delete branch remotely (and locally)
 * `git reset --hard origin/branch_to_overwrite` - hard reset if something breaks
 
+### Git config and SSH
+
+[More on git config here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
+[SSH key platform notes all here](https://user-guidance.services.alpha.mojanalytics.xyz/github.html#jupyterlab)
+
+
 <br>
 <hr>
 
