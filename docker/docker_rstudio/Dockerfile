@@ -18,7 +18,7 @@ RUN Rscript -e "install.packages(c('renv'));"
  
 COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/user-settings
 # WORKDIR "/home/rstudio/working/"
-COPY .Rprofile /home/rstudio/r_projects/
+COPY .Rprofile /home/rstudio/
 
 # some extra commands...
 # RUN mkdir -p /th-playground
