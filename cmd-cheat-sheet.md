@@ -110,7 +110,10 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 `git fetch -p`
 
 #### Search/replace strings
+**To search the github file using regex**
 `git grep -n "my regular expression search string"`
+**To search your current directory's files**
+`grep -r "my regular expression search string"`
 
 #### Disk Usage
 `du -h /home/th368moj | grep '^\s*[0-9\.]\+G'` - to see disk usage. Change the G to an M to search for items in the MB
