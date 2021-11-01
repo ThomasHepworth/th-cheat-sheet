@@ -29,3 +29,22 @@ _Note:_ if you need to reclone the project at any point, you'll need to reinstal
 For further info, please see both:
 * [The platform guidance for renv](https://user-guidance.services.alpha.mojanalytics.xyz/tools/package-management.html#renv)
 * [The official introduction to renv](https://rstudio.github.io/renv/articles/renv.html)
+
+### Coded Format
+
+```
+# other packages can be installed using
+renv::install("dplyr")
+
+# specific versions require an @ call
+renv::install("package_name@0.0.1")
+
+# packages only available on github can be installed through
+renv::install("moj-analytical-services/mojSuppression")
+
+# and critically, you also need to update the packages you install
+renv::restore() # takes whatever you've installed and puts them in renv.lock
+
+# and also copy someone else's updates
+renv::snapshot() # copy the installed list of packages
+```
