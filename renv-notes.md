@@ -45,6 +45,6 @@ renv::install("moj-analytical-services/mojSuppression")
 # and critically, you also need to update the packages you install
 renv::restore() # takes whatever you've installed and puts them in renv.lock
 
-# and also copy someone else's updates
+# to copy someone else's updates
 renv::snapshot() # copy the installed list of packages
 ```
