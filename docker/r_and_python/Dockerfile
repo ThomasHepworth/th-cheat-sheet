@@ -13,7 +13,6 @@ RUN apt-get update \
 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
 # Deal with pydbtools issue
-RUN pip install --upgrade pip
 RUN pip install --upgrade pip setuptools
 RUN pip install pydbtools==1.0.1
 COPY requirements.txt .
