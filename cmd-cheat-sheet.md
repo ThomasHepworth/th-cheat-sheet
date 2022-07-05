@@ -22,6 +22,7 @@
 * `git push -u origin my_branch_name` - tell github that you have made a new branch - otherwise it will fail when attempting to push
 * `git push origin --delete remoteBranchName` - delete branch remotely (and locally)
 * `git reset --hard origin/branch_to_overwrite` - hard reset if something breaks
+* `git reset --hard && git pull` - reset and pull
 
 ### Git config and SSH
 
