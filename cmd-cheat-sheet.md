@@ -27,6 +27,7 @@
 ### Git Stats
 
 * `git shortlog -s -n` -- see total commits broken down by users
+* `brew install git-extras` -> `git summary --line` -- see total line changes in git history
 
 ### Git config and SSH
 
