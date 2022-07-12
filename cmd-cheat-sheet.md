@@ -24,6 +24,10 @@
 * `git reset --hard origin/branch_to_overwrite` - hard reset if something breaks
 * `git reset --hard && git pull` - reset and pull
 
+### Git Stats
+
+* `git shortlog -s -n` -- see total commits broken down by users
+
 ### Git config and SSH
 
 [More on git config here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
