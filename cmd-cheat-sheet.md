@@ -23,6 +23,7 @@
 * `git push origin --delete remoteBranchName` - delete branch remotely (and locally)
 * `git reset --hard origin/branch_to_overwrite` - hard reset if something breaks
 * `git reset --hard && git pull` - reset and pull
+* `git pull --set-upstream` - pull the live version down
 
 ### Git Stats
 
