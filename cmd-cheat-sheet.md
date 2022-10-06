@@ -25,6 +25,10 @@
 * `git reset --hard && git pull` - reset and pull
 * `git pull --set-upstream` - pull the live version down
 
+
+### Terminal Commands
+* `cp -a data/. data/del_later/` - copy + paste a folder's contents and its contents to a new location
+
 ### Git Stats
 
 * `git shortlog -s -n` -- see total commits broken down by users
