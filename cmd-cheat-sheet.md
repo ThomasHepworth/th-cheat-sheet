@@ -102,14 +102,14 @@ git push origin/master --force
 
 ## Working in R/python
 
-#### Working with branches in the shell
+## Working with branches in the shell
 **Purported to resolve git index errors on the platform**
 
-##### Creating
+### Creating
 `git checkout -b <new_name>` - create a new branch
 `git checkout -m <branch_name>` - checkout
 
-##### Deleting
+### Deleting
 delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
 
 **delete branch locally**
@@ -121,7 +121,7 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 **sync up branch list through**
 `git fetch -p`
 
-#### Search/replace strings and files
+### Search/replace strings and files
 **To search the github file using regex**
 `git grep -n "my regular expression search string"`
 
@@ -130,6 +130,11 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 
 **Find files**
 `find . -name "synthetic_data_all.parquet"`
+
+**Find/Replace with RPL**
+`brew install rpl` -- if you don't already have it
+> https://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line
+`rpl -R cl_and and_ .`
 
 
 #### Disk Usage
