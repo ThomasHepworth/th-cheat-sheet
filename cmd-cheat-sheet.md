@@ -124,8 +124,10 @@ delete branches remotely and locally - https://www.freecodecamp.org/news/how-to-
 #### Search/replace strings and files
 **To search the github file using regex**
 `git grep -n "my regular expression search string"`
+
 **To search your current directory's files**
 `grep -r "my regular expression search string"`
+
 **Find files**
 `find . -name "synthetic_data_all.parquet"`
 
