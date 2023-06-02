@@ -24,8 +24,18 @@
 * `git reset --hard origin/branch_to_overwrite` - hard reset if something breaks
 * `git reset --hard && git pull` - reset and pull
 * `git pull --set-upstream` - pull the live version down
-* `git cherry-pick <commit_hash>` - grab a specific commit and put it on your current branch/commit
+* `git cherry-pick <commit_hash>` - grab a specific commit and put it on your current branch/commit -- https://gist.github.com/danielestevez/2044589
+* `git reset --hard {commit_hash} && git push --force` - destroy commit history after a specific commit
 
+### Data breaches
+To resolve, you can use the [`bfg repo cleaner`](https://rtyley.github.io/bfg-repo-cleaner/).
+
+Some quick instructions if you simply want to delete the file:
+```
+bfg --delete-files Monthly_Slides_Markdown.Rmd --no-blob-protection
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+git push --force
+```
 
 ### Terminal Commands
 * `cp -a data/. data/del_later/` - copy + paste a folder's contents and its contents to a new location
