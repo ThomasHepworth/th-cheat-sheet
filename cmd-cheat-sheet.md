@@ -19,6 +19,7 @@
 * `git checkout <filename>` - revert to upstream
 * `git checkout -b my_branch_name` - create and checkout on branch
 * `git branch <branch_name>` - create a branch
+* `git fetch origin <branch_name>` - fetch a remote branch for use locally
 * `git push -u origin my_branch_name` - tell github that you have made a new branch - otherwise it will fail when attempting to push
 * `git push origin --delete remoteBranchName` - delete branch remotely (and locally)
 * `git reset --hard origin/branch_to_overwrite` - hard reset if something breaks
