@@ -33,6 +33,9 @@
 1. `git remote add upstream https://github.com/moj-analytical-services/splink.git`
 2. `git fetch upstream`
 3. `git checkout master` - may not be needed, depending on the existing state of your forked repo
+To switch to another branch in your original repo...
+4. `git fetch upstream <branch_name>`
+5. `git checkout <branch_name>`
 
 ### Data breaches
 To resolve, you can use the [`bfg repo cleaner`](https://rtyley.github.io/bfg-repo-cleaner/).
