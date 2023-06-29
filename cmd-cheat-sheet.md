@@ -28,6 +28,12 @@
 * `git cherry-pick <commit_hash>` - grab a specific commit and put it on your current branch/commit -- https://gist.github.com/danielestevez/2044589
 * `git reset --hard {commit_hash} && git push --force` - destroy commit history after a specific commit
 
+### Sync a fork to include all branches from the main repo
+
+1. `git remote add upstream https://github.com/moj-analytical-services/splink.git`
+2. `git fetch upstream`
+3. `git checkout master` - may not be needed, depending on the existing state of your forked repo
+
 ### Data breaches
 To resolve, you can use the [`bfg repo cleaner`](https://rtyley.github.io/bfg-repo-cleaner/).
 
