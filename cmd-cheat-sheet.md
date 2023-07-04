@@ -15,6 +15,7 @@
 * `git add <filename>` - add a file to your commit - https://git-scm.com/docs/git-add
 * `git log --name-status` - see last commit items
 * `git commit -m <commit_message>` - stage commit
+* `git commit --allow-empty -m "Empty commit"` - stage an empty commit
 * `git push` - push commit
 * `git checkout <filename>` - revert to upstream
 * `git checkout -b my_branch_name` - create and checkout on branch
